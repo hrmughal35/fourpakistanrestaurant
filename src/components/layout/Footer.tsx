@@ -1,5 +1,5 @@
 import { Instagram, MessageCircle } from "lucide-react";
-import { BRAND } from "@/data/site";
+import { BRAND, DEVELOPER } from "@/data/site";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { CONTACT_LINKS } from "@/lib/contact";
 
@@ -57,14 +57,34 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-10 max-w-7xl border-t border-white/5 px-6 pt-8 text-center">
         <p className="text-xs text-warm-white/40">
-          Website concept crafted by{" "}
+          Website concept by{" "}
           <a
-            href="https://www.linkedin.com/in/welcometohassanraza/"
+            href={DEVELOPER.profileUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-gold transition hover:text-gold/80"
           >
-            Hassan Raza
+            {DEVELOPER.name}
+          </a>
+          <span className="text-warm-white/30"> · {DEVELOPER.title}</span>
+        </p>
+        <p className="mt-2 text-[11px] text-warm-white/30">
+          <a
+            href={DEVELOPER.profileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-gold"
+          >
+            hassanrazadev.tech
+          </a>
+          {" · "}
+          <a
+            href={DEVELOPER.linkedInUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-gold"
+          >
+            LinkedIn
           </a>
         </p>
       </div>

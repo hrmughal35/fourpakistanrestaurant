@@ -44,6 +44,13 @@ export const BRAND = {
   },
 } as const;
 
+export const DEVELOPER = {
+  name: "Hassan Raza",
+  title: "Software Engineer",
+  profileUrl: "https://hassanrazadev.tech",
+  linkedInUrl: "https://www.linkedin.com/in/welcometohassanraza/",
+} as const;
+
 export const HERO_VIDEO =
   "https://videos.pexels.com/video-files/3209663/3209663-uhd_2560_1440_25fps.mp4";
 
