@@ -29,7 +29,7 @@ export function SoundToggle() {
       variant="ghost"
       size="icon"
       onClick={toggle}
-      className="fixed bottom-6 right-6 z-50 rounded-full border border-white/10 bg-deep-black/80 backdrop-blur-xl"
+      className="fixed bottom-6 left-6 z-50 rounded-full border border-white/10 bg-deep-black/80 backdrop-blur-xl md:left-auto md:right-6"
       aria-label={on ? "Mute ambient sound" : "Play ambient sound"}
     >
       {on ? <Volume2 className="h-4 w-4 text-gold" /> : <VolumeX className="h-4 w-4" />}

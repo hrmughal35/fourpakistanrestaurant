@@ -27,10 +27,16 @@ export const BRAND = {
     gold: "#D4AF37",
     white: "#FAF8F5",
   },
+  contact: {
+    instagramHandle: "@fourpakistan_",
+    instagramUrl: "https://www.instagram.com/fourpakistan_/",
+    whatsappDisplay: "0325 1231222",
+    /** Digits only, country code first — used for wa.me links */
+    whatsappNumber: "923251231222",
+    whatsappMessage: "Hi FOUR! I'd like to place an order.",
+  },
   social: {
-    instagram: "https://instagram.com",
     foodpanda: "https://www.foodpanda.pk",
-    whatsapp: "https://wa.me/923001234567",
   },
   stats: {
     reviews: 5000,

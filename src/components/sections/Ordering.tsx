@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { BRAND, IMAGES } from "@/data/site";
+import { CONTACT_LINKS } from "@/lib/contact";
 import { MagneticButton } from "@/components/effects/MagneticButton";
 
 export function Ordering() {
@@ -61,7 +62,7 @@ export function Ordering() {
           </MagneticButton>
           <MagneticButton
             as="a"
-            href={BRAND.social.whatsapp}
+            href={CONTACT_LINKS.whatsapp}
             className="inline-flex h-16 min-w-[240px] items-center justify-center rounded-full border-2 border-[#25D366] bg-[#25D366]/10 px-10 text-sm font-bold uppercase tracking-widest text-[#25D366]"
           >
             WhatsApp Order

@@ -6,6 +6,7 @@ import { BrandLogo } from "@/components/ui/BrandLogo";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { CONTACT_LINKS } from "@/lib/contact";
 
 const LINKS = [
   { href: "#story", label: "Story" },
@@ -14,6 +15,7 @@ const LINKS = [
   { href: "#gallery", label: "Gallery" },
   { href: "#branches", label: "Locations" },
   { href: "#order", label: "Order" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function Navbar() {
@@ -96,6 +98,14 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={CONTACT_LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm uppercase tracking-widest text-gold"
+            >
+              Instagram
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -4,6 +4,7 @@ import { SafeImage } from "@/components/ui/SafeImage";
 import { motion } from "framer-motion";
 import { Heart, Instagram } from "lucide-react";
 import { BRAND, INSTAGRAM_POSTS } from "@/data/site";
+import { CONTACT_LINKS } from "@/lib/contact";
 
 export function InstagramFeed() {
   return (
@@ -19,7 +20,7 @@ export function InstagramFeed() {
             </h2>
           </div>
           <a
-            href={BRAND.social.instagram}
+            href={CONTACT_LINKS.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 text-sm uppercase tracking-widest text-warm-white transition hover:border-gold hover:text-gold"
@@ -33,7 +34,7 @@ export function InstagramFeed() {
           {INSTAGRAM_POSTS.map((post, i) => (
             <motion.a
               key={post.id}
-              href={BRAND.social.instagram}
+              href={CONTACT_LINKS.instagram}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}

@@ -20,6 +20,8 @@ import { Reviews } from "@/components/sections/Reviews";
 import { Branches } from "@/components/sections/Branches";
 import { Ordering } from "@/components/sections/Ordering";
 import { InstagramFeed } from "@/components/sections/InstagramFeed";
+import { ContactSection } from "@/components/sections/ContactSection";
+import { FloatingContact } from "@/components/layout/FloatingContact";
 
 export function HomePage() {
   const [loaded, setLoaded] = useState(false);
@@ -42,6 +44,7 @@ export function HomePage() {
             <SauceParticles />
             <BurgerFollower />
             <SoundToggle />
+            <FloatingContact />
             <Navbar />
             <main className="w-full max-w-[100vw] overflow-x-clip">
               <Hero />
@@ -54,6 +57,7 @@ export function HomePage() {
               <Branches />
               <Ordering />
               <InstagramFeed />
+              <ContactSection />
             </main>
             <Footer />
           </SmoothScroll>
