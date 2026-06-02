@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BRAND } from "@/data/site";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 
 interface LoadingScreenProps {

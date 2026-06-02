@@ -5,7 +5,6 @@ import Link from "next/link";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { BRAND } from "@/data/site";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
