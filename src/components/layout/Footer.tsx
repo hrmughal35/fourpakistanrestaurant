@@ -31,6 +31,19 @@ export function Footer() {
           </a>
         </div>
       </div>
+      <div className="mx-auto mt-10 max-w-7xl border-t border-white/5 px-6 pt-8 text-center">
+        <p className="text-xs text-warm-white/40">
+          Website concept crafted by{" "}
+          <a
+            href="https://www.linkedin.com/in/welcometohassanraza/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-gold transition hover:text-gold/80"
+          >
+            Hassan Raza
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
