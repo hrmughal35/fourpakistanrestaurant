@@ -46,12 +46,12 @@ function BurgerCard({
       <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-gold/0 via-gold/0 to-gold/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
       <div className="relative overflow-hidden rounded-[22px] bg-deep-black">
-        <div className="relative aspect-[4/3] overflow-hidden">
+        <div className="relative aspect-[4/3] min-h-0 overflow-hidden">
           <SafeImage
             src={burger.image}
             alt={burger.name}
             fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            className="transition-transform duration-700 group-hover:scale-110"
             sizes="(max-width:768px) 100vw, 50vw"
           />
           <span className="absolute left-4 top-4 rounded-full bg-gold px-4 py-1 text-xs font-semibold uppercase tracking-wider text-deep-black">
@@ -93,7 +93,7 @@ export function BurgersShowcase() {
   const inView = useInView(titleRef, { once: true });
 
   return (
-    <section id="burgers" className="relative bg-deep-black py-32">
+    <section id="burgers" className="relative w-full max-w-[100vw] overflow-x-clip bg-deep-black py-20 md:py-32">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(75,15,25,0.4),transparent_60%)]" />
 
       <div ref={titleRef} className="relative mx-auto max-w-7xl px-6">

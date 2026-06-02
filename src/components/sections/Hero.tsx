@@ -18,16 +18,16 @@ export function Hero() {
     <section
       ref={ref}
       id="hero"
-      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-4 sm:px-6"
+      className="relative flex min-h-[100svh] w-full max-w-[100vw] items-center justify-center overflow-hidden px-4 sm:px-6"
     >
-      <motion.div style={{ y }} className="absolute inset-0">
+      <motion.div style={{ y }} className="absolute inset-0 min-h-0 min-w-0 overflow-hidden">
         <video
           autoPlay
           muted
           loop
           playsInline
           poster={IMAGES.burgerClassic.replace("w=1200", "w=1920")}
-          className="h-full w-full object-cover"
+          className="h-full w-full max-w-full object-cover object-center"
         >
           <source src={HERO_VIDEO} type="video/mp4" />
         </video>

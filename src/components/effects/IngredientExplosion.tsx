@@ -44,10 +44,10 @@ export function IngredientExplosion() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden py-24"
+      className="relative w-full max-w-[100vw] overflow-x-clip py-24"
       aria-label="Ingredient showcase"
     >
-      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-4 px-6">
+      <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-center gap-3 px-4 sm:gap-4 sm:px-6">
         {INGREDIENTS_EXPLOSION.map((word) => (
           <span
             key={word}

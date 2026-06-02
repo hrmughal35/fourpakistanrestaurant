@@ -35,6 +35,7 @@ export function HomePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
+          className="site-shell"
         >
           <SmoothScroll>
             <CustomCursor />
@@ -42,7 +43,7 @@ export function HomePage() {
             <BurgerFollower />
             <SoundToggle />
             <Navbar />
-            <main>
+            <main className="w-full max-w-[100vw] overflow-x-clip">
               <Hero />
               <Story />
               <IngredientExplosion />

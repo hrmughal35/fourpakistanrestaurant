@@ -6,15 +6,16 @@ import { IMAGES } from "@/data/site";
 import { cn } from "@/lib/utils";
 
 /** Next/Image with fallback when upstream optimization fails */
-export function SafeImage({ src, alt, className, ...props }: ImageProps) {
+export function SafeImage({ src, alt, className, fill, ...props }: ImageProps) {
   const [imgSrc, setImgSrc] = useState(src);
 
-  return (
+  const image = (
     <Image
       {...props}
+      fill={fill}
       src={imgSrc}
       alt={alt}
-      className={cn(className)}
+      className={cn(fill && "object-cover", className)}
       onError={() => {
         if (imgSrc !== IMAGES.burgerClassic) {
           setImgSrc(IMAGES.burgerClassic);
@@ -22,4 +23,14 @@ export function SafeImage({ src, alt, className, ...props }: ImageProps) {
       }}
     />
   );
+
+  if (fill) {
+    return (
+      <div className="relative h-full w-full min-h-0 min-w-0 overflow-hidden">
+        {image}
+      </div>
+    );
+  }
+
+  return image;
 }

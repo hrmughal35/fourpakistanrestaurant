@@ -10,7 +10,7 @@ export function MenuSection() {
   const [active, setActive] = useState<MenuCategory>("burgers");
 
   return (
-    <section id="menu" className="relative bg-burgundy/20 py-32">
+    <section id="menu" className="relative w-full max-w-[100vw] overflow-x-clip bg-burgundy/20 py-20 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
           <span className="text-xs uppercase tracking-[0.4em] text-gold">

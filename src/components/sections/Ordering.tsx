@@ -7,18 +7,19 @@ import { MagneticButton } from "@/components/effects/MagneticButton";
 
 export function Ordering() {
   return (
-    <section id="order" className="relative overflow-hidden py-32">
-      <div className="absolute inset-0">
+    <section id="order" className="relative isolate min-h-[420px] w-full max-w-[100vw] overflow-hidden py-24 md:py-32">
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
         <SafeImage
-          src={IMAGES.burgerStack.replace("w=1200", "w=1920")}
+          src={IMAGES.burgerGourmet}
           alt=""
           fill
-          className="object-cover opacity-20"
+          sizes="100vw"
+          className="opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-deep-black via-deep-black/90 to-burgundy/80" />
       </div>
 
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

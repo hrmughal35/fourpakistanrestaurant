@@ -6,7 +6,7 @@ import { GALLERY } from "@/data/site";
 
 export function Gallery() {
   return (
-    <section id="gallery" className="bg-deep-black py-32">
+    <section id="gallery" className="w-full max-w-[100vw] overflow-x-clip bg-deep-black py-20 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <span className="text-xs uppercase tracking-[0.4em] text-gold">
